@@ -2,19 +2,22 @@
 //  DetailView.swift
 //  H4X0R News
 //
-//  Created by Wenli Li on 3/6/24.
+//  Created by Wenli Li on 3/7/24.
 //
 
 import SwiftUI
 
 struct DetailView: View {
+    
     let url: String?
     
     var body: some View {
-       WebView(urlString: url)
+        WebView(urlString: url)
     }
 }
 
-#Preview {
-    DetailView(url: "https://www.google.com")
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView(url: "https://www.google.com")
+    }
 }
